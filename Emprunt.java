@@ -9,5 +9,26 @@ package com.mycompany.evalhashmap;
  * @author ituani
  */
 public class Emprunt {
-    
+
+    private String titre;
+    private String date;
+
+    @Override
+    public String toString() {
+        return "Emprunt{" + "titre=" + titre + ", date=" + date + '}';
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public Emprunt(String titre, String date) {
+        this.titre = titre;
+        this.date = date;
+    }   
 }
+
